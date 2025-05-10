@@ -1,0 +1,86 @@
+:root {
+    --White: hsl(0, 100%, 100%);
+--Purple-100: hsl(275, 100%, 97%);
+--Purple-600: hsl(292, 16%, 49%);
+--Purple-950: hsl(292, 42%, 14%);
+}
+
+html {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+        background-image: url(images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 1rem;
+    }
+
+.card {
+    background-color: var(--White);
+    padding: 2rem;
+    margin: auto;
+}
+
+.faq-section {
+    display: flex;
+}
+img {
+    width: 30px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.accordion-item {
+    
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.question:hover {
+    color: var(--Purple-600);
+}
+.question h4 {
+    font-size: 1rem;
+}
+
+.question img {
+    display: block;
+    margin: 0;
+    width: 25px;
+}
+
+.content {
+    color: gray;
+}
+
+.collapsed {
+    display: none;
+}
+
+.collapse-open {
+    display: block;
+}
+
+
+@media (min-width: 800px) {
+    body {
+        background-image: url(images/background-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 50% 1;
+    }
+
+    .card {
+        width: 550px;
+        box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+    }
+}
